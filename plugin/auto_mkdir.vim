@@ -26,12 +26,12 @@ endif
 let g:loaded_auto_mkdir = 1
 
 if !exists("*mkdir")
-	echomsg "auto_mkdir: mkdir() is not available, plug-in disabled."
+	echomsg "auto_mkdir: mkdir() is not available, plugin disabled."
 	finish
 endif
 
 if !has("autocmd")
-	echomsg "auto_mkdir: autocommands not available, plug-in disabled."
+	echomsg "auto_mkdir: autocommands not available, plugin disabled."
 	finish
 endif
 
