@@ -1,7 +1,8 @@
 " ----------------------------------------------------------------------
 "
-"   File: auto_mkdir.vim
-" Author: Johannes Holzfuß <DataWraith@web.de>
+"    File: auto_mkdir.vim
+"  Author: Johannes Holzfuß <DataWraith@web.de>
+" Version: 1.0.0
 "
 " Description:
 "     When saving a file, automatically create the file's parent
