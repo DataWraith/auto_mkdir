@@ -8,6 +8,13 @@
 "     When saving a file, automatically create the file's parent
 "     directories if they do not exist yet.
 "
+"     For example,
+"
+"         :w foo/bar/baz.txt
+"
+"     will create the directories foo/ and foo/bar/ if they do not exist
+"     already, then save the current buffer as baz.txt
+"
 " License:
 "     This file is placed in the public domain.
 "
@@ -37,7 +44,7 @@ function <SID>auto_mkdir()
 	" Get directory the file is supposed to be saved in
 	let s:dir = expand("<afile>:p:h")
 
-	" Create directory if it does not exist yet
+	" Create that directory (and its parents) if it doesn't exist yet
 	if !isdirectory(s:dir)
 		call mkdir(s:dir, "p")
 	endif
